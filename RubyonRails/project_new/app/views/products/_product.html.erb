@@ -1,0 +1,16 @@
+
+<%= form_with(model: @product) do |form| %>
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+
+    <%= form.label :quantidade %>
+    <%= form.number_field :quantidade %>
+
+    <%= form.label :preco %>
+    <%= form.number_field :preco %>
+
+    <%= form.submit "salvar" %>
+
+    <% end %>
+
+     <%= link_to "voltar", products_path %>
